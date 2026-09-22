@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>SimpleStockFlow.Application.UnitTests</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="NSubstitute" Version="5.1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- Outbound ports are faked. No reference to adapters/ belongs here. -->
+    <ProjectReference Include="../../src/application/SimpleStockFlow.Application.csproj" />
+  </ItemGroup>
+</Project>

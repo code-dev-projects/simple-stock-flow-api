@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>SimpleStockFlow.Adapters.IntegrationTests</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="8.0.10" />
+    <PackageReference Include="Testcontainers.PostgreSql" Version="3.10.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../src/bootstrap/SimpleStockFlow.Bootstrap.csproj" />
+    <ProjectReference Include="../../src/adapters/outbound/persistence/SimpleStockFlow.Adapters.Persistence.csproj" />
+  </ItemGroup>
+</Project>

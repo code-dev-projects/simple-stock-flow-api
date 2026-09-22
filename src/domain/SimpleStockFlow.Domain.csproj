@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>SimpleStockFlow.Domain</RootNamespace>
+    <AssemblyName>SimpleStockFlow.Domain</AssemblyName>
+  </PropertyGroup>
+  <!-- HEXAGON RULE: this csproj must never gain an ItemGroup, neither a ProjectReference
+       nor an infrastructure PackageReference. The empty file is the rule being enforced. -->
+</Project>

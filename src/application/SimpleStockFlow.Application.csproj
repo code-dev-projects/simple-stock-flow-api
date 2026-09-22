@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>SimpleStockFlow.Application</RootNamespace>
+    <AssemblyName>SimpleStockFlow.Application</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../domain/SimpleStockFlow.Domain.csproj" />
+  </ItemGroup>
+</Project>

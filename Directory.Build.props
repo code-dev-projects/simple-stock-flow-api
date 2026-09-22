@@ -1,0 +1,19 @@
+<Project>
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>12.0</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+
+    <!--
+      Runs on .NET 8, the framework it targets. Rolling forward to a newer major used to hide
+      the missing runtime, but it also ran the tests against a framework the container never
+      uses, and ASP.NET Core 8's test server breaks against a newer JSON serializer.
+      Local runs need the .NET 8 runtime installed; the container already has it.
+    -->
+    <RollForward>LatestPatch</RollForward>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>SimpleStockFlow.Domain.UnitTests</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- Domain only: the day you need a mock in here, the design is wrong. -->
+    <ProjectReference Include="../../src/domain/SimpleStockFlow.Domain.csproj" />
+  </ItemGroup>
+</Project>

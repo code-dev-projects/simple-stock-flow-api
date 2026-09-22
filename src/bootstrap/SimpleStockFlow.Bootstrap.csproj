@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <RootNamespace>SimpleStockFlow.Bootstrap</RootNamespace>
+    <AssemblyName>SimpleStockFlow.Bootstrap</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.10" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.9.0" />
+    <PackageReference Include="Serilog.AspNetCore" Version="8.0.3" />
+    <!-- Design-time only: the EF tools need it in the startup project to build the model. -->
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../adapters/inbound/api/SimpleStockFlow.Adapters.Rest.csproj" />
+    <ProjectReference Include="../adapters/outbound/persistence/SimpleStockFlow.Adapters.Persistence.csproj" />
+    <ProjectReference Include="../adapters/outbound/storage/SimpleStockFlow.Adapters.Storage.csproj" />
+    <ProjectReference Include="../adapters/outbound/security/SimpleStockFlow.Adapters.Security.csproj" />
+  </ItemGroup>
+</Project>

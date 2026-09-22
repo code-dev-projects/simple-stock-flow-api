@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34322.80
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleStockFlow.Domain", "src\domain\SimpleStockFlow.Domain.csproj", "{2AE94931-6A6A-4B31-A21A-F8FBA29253E7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleStockFlow.Application", "src\application\SimpleStockFlow.Application.csproj", "{32DB89DD-A3A7-4ED0-8B20-E093792DF744}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleStockFlow.Adapters.Rest", "src\adapters\inbound\api\SimpleStockFlow.Adapters.Rest.csproj", "{DCA81D0E-0B25-427C-90C5-16F94F15227F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleStockFlow.Adapters.Persistence", "src\adapters\outbound\persistence\SimpleStockFlow.Adapters.Persistence.csproj", "{8F3B2A1A-FED1-4955-98BF-205D9E6567B1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleStockFlow.Adapters.Storage", "src\adapters\outbound\storage\SimpleStockFlow.Adapters.Storage.csproj", "{F4FE2A29-A56A-4A66-BDFD-F987EC144CD3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleStockFlow.Adapters.Security", "src\adapters\outbound\security\SimpleStockFlow.Adapters.Security.csproj", "{B2FB4D0C-D4C3-4145-80FC-1FB2203CD47B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleStockFlow.Bootstrap", "src\bootstrap\SimpleStockFlow.Bootstrap.csproj", "{AF7D3CE8-385A-46D0-867D-29581263F7B9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleStockFlow.Domain.UnitTests", "tests\Domain.UnitTests\SimpleStockFlow.Domain.UnitTests.csproj", "{83196655-8278-40B3-9552-6236D4EF6C7F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleStockFlow.Application.UnitTests", "tests\Application.UnitTests\SimpleStockFlow.Application.UnitTests.csproj", "{A843BCE4-B074-4F1C-8346-D4C7168E8C50}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleStockFlow.Adapters.IntegrationTests", "tests\Adapters.IntegrationTests\SimpleStockFlow.Adapters.IntegrationTests.csproj", "{E51C8401-4ADA-4EB6-8A5C-52DE9987318E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2AE94931-6A6A-4B31-A21A-F8FBA29253E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AE94931-6A6A-4B31-A21A-F8FBA29253E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AE94931-6A6A-4B31-A21A-F8FBA29253E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AE94931-6A6A-4B31-A21A-F8FBA29253E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32DB89DD-A3A7-4ED0-8B20-E093792DF744}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32DB89DD-A3A7-4ED0-8B20-E093792DF744}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32DB89DD-A3A7-4ED0-8B20-E093792DF744}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32DB89DD-A3A7-4ED0-8B20-E093792DF744}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCA81D0E-0B25-427C-90C5-16F94F15227F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCA81D0E-0B25-427C-90C5-16F94F15227F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCA81D0E-0B25-427C-90C5-16F94F15227F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCA81D0E-0B25-427C-90C5-16F94F15227F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F3B2A1A-FED1-4955-98BF-205D9E6567B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F3B2A1A-FED1-4955-98BF-205D9E6567B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F3B2A1A-FED1-4955-98BF-205D9E6567B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F3B2A1A-FED1-4955-98BF-205D9E6567B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4FE2A29-A56A-4A66-BDFD-F987EC144CD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4FE2A29-A56A-4A66-BDFD-F987EC144CD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4FE2A29-A56A-4A66-BDFD-F987EC144CD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4FE2A29-A56A-4A66-BDFD-F987EC144CD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2FB4D0C-D4C3-4145-80FC-1FB2203CD47B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2FB4D0C-D4C3-4145-80FC-1FB2203CD47B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2FB4D0C-D4C3-4145-80FC-1FB2203CD47B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2FB4D0C-D4C3-4145-80FC-1FB2203CD47B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF7D3CE8-385A-46D0-867D-29581263F7B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF7D3CE8-385A-46D0-867D-29581263F7B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF7D3CE8-385A-46D0-867D-29581263F7B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF7D3CE8-385A-46D0-867D-29581263F7B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83196655-8278-40B3-9552-6236D4EF6C7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83196655-8278-40B3-9552-6236D4EF6C7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83196655-8278-40B3-9552-6236D4EF6C7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83196655-8278-40B3-9552-6236D4EF6C7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A843BCE4-B074-4F1C-8346-D4C7168E8C50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A843BCE4-B074-4F1C-8346-D4C7168E8C50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A843BCE4-B074-4F1C-8346-D4C7168E8C50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A843BCE4-B074-4F1C-8346-D4C7168E8C50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E51C8401-4ADA-4EB6-8A5C-52DE9987318E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E51C8401-4ADA-4EB6-8A5C-52DE9987318E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E51C8401-4ADA-4EB6-8A5C-52DE9987318E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E51C8401-4ADA-4EB6-8A5C-52DE9987318E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
